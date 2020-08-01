@@ -1,0 +1,13 @@
+window_size: 8000
+step: 2000
+sound_speed: 331
+n_points: 5000
+radius: 5
+chebwin_attenuation: 0  # zero for uniform window, 100 for default Chebychev.
+filter_harmonic_num: 3  # how many harmonics of dominant frequency we want to be present
+harmonic_to_pass: 2 #if we have 3 out of 4 harmonics than we take the frequency
+percentile: 0.5
+max_num_xcorr_maximums: 25
+xcorr_pairs:
+  - [2,0]
+  - [3,1]
