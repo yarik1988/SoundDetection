@@ -16,7 +16,7 @@ if params['chebwin_attenuation'] > 0:
 else:
     window = np.ones(params['window_size'])
 #load source file
-filename = "../data/26.05.20/2020-02-14 172715.674766.wav"
+filename = "data/26.05.20/2020-02-14 172715.674766.wav"
 feeder = aux_fn.FileFeeder(filename, params['window_size'], params['step'])
 gen = iter(feeder)
 #process geometry between mics
